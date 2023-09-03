@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(.//img/mustaqillik.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.description {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 1.5rem;
+  color: #01fe87;
+  letter-spacing: 8px;
+  animation: example 4s linear infinite;
+}
+@keyframes example {
+  50% {
+    transform: rotateY(360deg);
+  }
+}
+.flag {
+  width: 50rem;
+  height: 25rem;
+  border: 1px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 4px 8px 16px 0, inset 0 8rem 0 blue, inset 0 8.5rem 0 red,
+    inset 0 16.5rem 0 white, inset 0 17rem 0 red, inset 0 25rem 0 green;
+  padding: 0.5rem 4rem;
+}
+.flag::before {
+  content: "";
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: inset 0.8rem 0.1rem white;
+}
+.flag::after {
+  content: "\2605";
+  position: absolute;
+  color: white;
+  font-size: 1.8rem;
+  line-height: 100%;
+  top: 5.9rem;
+  left: 9rem;
+  text-shadow: 2.5rem 0 0, 5rem 0 0, 7.5rem 0 0, 10rem 0 0, 2.5rem -2.8rem 0,
+    5rem -2.8rem 0, 7.5rem -2.8rem 0, 10rem -2.8rem 0, 5rem -5.6rem 0,
+    7.5rem -5.6rem 0, 10rem -5.6rem 0;
+}
